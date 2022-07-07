@@ -1,9 +1,86 @@
-import React from 'react'
+import { useState } from "react";
+import { toast } from "react-toastify";
+
+import ErrorMessage from "../ErrorMessage";
 
 const RegisterForm = () => {
-  return (
-    <div>RegisterForm y aqui va un register</div>
-  )
-}
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [error, setError] = useState("");
 
-export default RegisterForm
+  const registerUser = async (e) => {
+    try {
+      e.preventDefault();
+
+      const userToRegister = { email, password };
+
+      if (name) {
+        userToRegister.name = name;
+      }
+
+      const res = await fetch("http://localhost:3000/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userToRegister),
+      });
+
+      if (!res.ok) {
+        const body = await res.json();
+        throw new Error(body.message);
+      }
+
+      setError("");
+      setName("");
+      setEmail("");
+      setPassword("");
+      toast.success("Registered succesfully. Check your email!");
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+  return (
+    <>
+      <form onSubmit={registerUser}>
+        <label htmlFor="name">Name:</label>
+        <input
+          id="name"
+          type="name"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
+
+        <label htmlFor="email">Email*:</label>
+        <input
+          id="email"
+          type="email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+
+        <label htmlFor="password">Password*:</label>
+        <input
+          id="password"
+          type="password"
+          value={password}
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
+        />
+
+        <button>Register</button>
+      </form>
+
+      {error && <ErrorMessage error={error} />}
+    </>
+  );
+};
+
+export default RegisterForm;

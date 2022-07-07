@@ -7,7 +7,7 @@ import LoginForm from "./components/LoginForm/LoginForm"; //
 import HomePage from "./pages/HomePage/HomePage";
 import NoteSimplePage from "./pages/NotesPage/NoteSimplePage";
 import NotFoundPage from "./pages/NotFoundPage";
-
+import RegisterPage from "./pages/RegisterPage";
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/note/:id" element={<NoteSimplePage />} />
-          <Route path="/register" element={<RegisterForm />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFoundPage />} />
