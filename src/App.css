@@ -1,4 +1,30 @@
+/* :root {
+  --text-color: #888;
+  --text-color-active: #fff;
+  --app-bg-color: #201E48;
+  --note-bg-color: #111;
+  --border-color: #333;
+
+} */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--app-bg-color);
+}
+
 .App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+  background-color: var(--app-bg-color);
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +61,9 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+a {
+  color: #3b36c6;
+  text-decoration: none
 }

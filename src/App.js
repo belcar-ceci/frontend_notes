@@ -1,11 +1,14 @@
 import './App.css';
-import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import RegisterForm from "./components/RegisterForm/RegisterForm";//
-import LoginForm from "./components/LoginForm/LoginForm";//
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import RegisterPage from "./pages/RegisterPage/RegisterPage";//
+import LoginPage from "./pages/LoginPage/LoginPage";//
 import HomePage from "./pages/HomePage/HomePage";
 import NoteSimplePage from "./pages/NotesPage/NoteSimplePage"
+import CreateNotePage from "./pages/CreateNotePage/CreateNotePage"
+import ProfilePage from "./pages/ProfilePage/ProfilePage"
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage"
 
 
 function App() {
@@ -14,11 +17,14 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/note/:id" element={<NoteSimplePage />} />
-          <Route path="/register" element={<RegisterForm />} />
-          <Route path="/login" element={<LoginForm />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/" element={<HomePage />} /> {/*EntriesPage */}
+          <Route path="/note/:id" element={<NoteSimplePage />} />  {/*EntryPage */}
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/create/note" element={<CreateNotePage />} /> {/*CreateEntryPage */}
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="*" element={<NotFoundPage />} />
+         
         </Routes>
       </main>
       <Footer />

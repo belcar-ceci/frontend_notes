@@ -1,0 +1,18 @@
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 0.25rem 0.75rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+svg {
+  font-size: 40px;
+}
