@@ -9,7 +9,7 @@ const RegisterForm = () => {
   const [name, setName] = useState("");
   const [error, setError] = useState("");
 
-  const registerUser = async (e) => {
+    const registerUser = async (e) => {
     try {
       e.preventDefault();
 
@@ -26,9 +26,9 @@ const RegisterForm = () => {
         },
         body: JSON.stringify(userToRegister),
       });
-
       if (!res.ok) {
         const body = await res.json();
+        console.log(body)
         throw new Error(body.message);
       }
 

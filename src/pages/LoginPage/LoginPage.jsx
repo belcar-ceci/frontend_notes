@@ -1,8 +1,11 @@
 import React from 'react'
+import LoginForm from '../../components/LoginForm'
 
 const LoginPage = () => {
   return (
-    <div>LoginoAGE aqui va un login</div>
+    <div>LoginoAGE aqui va un login
+      <LoginForm/>
+    </div>
   )
 }
 
