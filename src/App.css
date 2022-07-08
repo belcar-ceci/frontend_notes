@@ -13,15 +13,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--app-bg-color);
+  /*background-color: var(--app-bg-color);*/
 }
 
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  color: var(--text-color);
-  background-color: var(--app-bg-color);
+  /*color: var(--text-color);*/
+  /*background-color: var(--app-bg-color);*/
 }
 
 /* .App {
@@ -64,6 +64,11 @@ body {
 } */
 
 a {
-  color: #3b36c6;
-  text-decoration: none
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: none;
 }

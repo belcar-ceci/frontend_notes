@@ -2,6 +2,7 @@ import "./style.css";
 import { Link } from "react-router-dom";
 //import { useUserTokenContext } from "../../contexts/UserTokenContext";
 import Button from "../Button/index";
+import Logo from '../../assets/img/Logo_sn.svg'
 
 //import RegisterForm from '../RegisterForm'
 
@@ -13,33 +14,30 @@ const Header = () => {
   return (
     <header className="header">
 
-        <Link to="/">
-        <h1>Sticky Notes.</h1>
+      <Link to="/">
+        <section className="header-title">
+        
         <img
-            src={require("../../assets/img/sticky_note.png")}
+            src={Logo}
+            width="50%"
             alt=""
-            width="38%"
+            
           />
+        </section>
       </Link>
     <nav>
           <Link to="/create/note" className="red_button">
             Create entry
           </Link>
-        
-      </nav>
-
-  
+    </nav>
       <nav>
         <ul>
-          
-            <>
-              <button className="register">
+          <div className="header-context-user">
+              <Link to="/login">Login</Link>
+              <button className="header-register_user">
                 <Link to="/register">Register</Link>
               </button>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-            </>
+          </div>
         
           
             <li>
