@@ -17,8 +17,9 @@ const useFetch = (url) => {
           : {};
 
         const res = await fetch(url, options);
-
+        console.log(res)
         const body = await res.json();
+        console.log(body)
 
         if (res.ok) {
           setData(body.data);

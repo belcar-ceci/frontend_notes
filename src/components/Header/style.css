@@ -15,6 +15,27 @@
     flex-direction: row;
     gap: 1rem;
 }
+.header-login_user{
+    min-width: 130px;
+    height: 40px;
+    color: rgb(131, 126, 126);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #e8d310;
+    background: #e8d310;
+}
+
+.header-login_user:hover{
+  background: #857e41;
+  color: #e8d310
+}
+
 .header-register_user{
     min-width: 130px;
     height: 40px;
@@ -29,13 +50,6 @@
     border-radius: 20px;
     border: 2px solid #d90429;
     background: #d90429;
-    /*background-color: #ccc;
-    color: #111;
-    border-radius: 25px;
-    color: inherit;
-    font: inherit;
-    padding: 0.5rem 1rem;*/
-
 }
 
 .header-register_user:hover{

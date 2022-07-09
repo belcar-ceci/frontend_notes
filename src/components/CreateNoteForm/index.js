@@ -69,7 +69,7 @@ const CreateNoteForm = () => {
       }*/}
 
       toast.success("Entry created succesfully");
-      navigate(`/entry/${id}`);
+      navigate(`/notes/${id}`);
     } catch (error) {
       setError(error.message);
     }
@@ -114,7 +114,7 @@ const CreateNoteForm = () => {
         </label>
         <input type="file" id="images" ref={filesRef} multiple />*/}
 
-        <Button className="red_button">Send entry</Button>
+        <Button className="button_component">Send entry</Button>
       </form>
 
       {error && <ErrorMessage error={error} />}

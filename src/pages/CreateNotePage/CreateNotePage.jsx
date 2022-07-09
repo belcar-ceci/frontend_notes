@@ -1,8 +1,12 @@
 import React from 'react'
+import CreateNoteForm from "../../components/CreateNoteForm";
 
 const CreateNotePage = () => {
   return (
-    <div>CreateNotePage</div>
+    <section>CreateNotePage
+
+      <CreateNoteForm />
+    </section>
   )
 }
 

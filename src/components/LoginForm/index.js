@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-//import { useUserTokenContext } from "../../contexts/UserTokenContext";
+import { useUserTokenContext } from "../../contexts/UserTokenContext";
 import Button from "../Button";
 import ErrorMessage from "../ErrorMessage";
 
@@ -9,7 +9,7 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  //const { setToken } = useUserTokenContext();
+  const { setToken } = useUserTokenContext();
   const navigate = useNavigate();
 
   const loginUser = async (e) => {
@@ -31,7 +31,7 @@ const LoginForm = () => {
         throw new Error(body.message);
       }
 
-      //setToken(body.data.token);
+      setToken(body.data.token);
 
       setError("");
       setEmail("");
@@ -66,7 +66,7 @@ const LoginForm = () => {
           }}
         />
 
-        <Button className="red_button">Login</Button>
+        <Button className="button_component">Login</Button>
       </form>
 
       {error && <ErrorMessage error={error} />}

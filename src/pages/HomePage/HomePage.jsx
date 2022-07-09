@@ -1,8 +1,14 @@
 import React from 'react'
+import "./style.css"; 
 
 const HomePage = () => {
   return (
-    <div>HomePage y aqui va register y login Y BIENVENIDA
+    <div>
+      <div className="text-container">
+        <h2 data-text="Create..">Create...</h2>
+        <h2 data-text="Organize..">Organize...</h2>
+        <h2 data-text="Easy..">Easy...</h2>
+      </div>
       
     </div>
   )

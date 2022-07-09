@@ -16,12 +16,16 @@ body {
   /*background-color: var(--app-bg-color);*/
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /*color: var(--text-color);*/
-  /*background-color: var(--app-bg-color);*/
+  background-color: #201E48;
 }
 
 /* .App {
@@ -71,4 +75,17 @@ a {
 a:hover {
   color: hotpink;
   text-decoration: none;
+}
+
+.button_component{
+  border: 1px solid #d25f07;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  color: white;
+  font-weight: bold;
+  background-color: #d25f07;
+  transition: background-color 0.5s;
+}
+.button_component:hover {
+  background-color: rgb(130, 63, 5);
 }

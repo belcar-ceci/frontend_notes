@@ -8,10 +8,10 @@ const NotesList = ({ notes }) => {
     <List
       className="notes_list"
       data={notes}
-      render={(note) => (
-        <li key={note.id}>
-          <Link to={`/entry/${note.id}`}>
-            <NoteInfo entry={note} />
+      render={(notes) => (
+        <li key={notes.id}>
+          <Link to={`/notes/${notes.id}`}>
+            <NoteInfo note={notes} />
           </Link>
         </li>
       )}

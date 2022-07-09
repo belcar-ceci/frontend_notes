@@ -75,7 +75,7 @@ const RegisterForm = () => {
           }}
         />
 
-        <Button className="red_button">Register</Button>
+        <Button className="button_component">Register</Button>
       </form>
 
       {error && <ErrorMessage error={error} />}

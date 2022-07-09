@@ -18,10 +18,10 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} /> {/*EntriesPage */}
-          <Route path="/note/:id" element={<NoteSimplePage />} />  {/*EntryPage */}
+          <Route path="/notes/:id" element={<NoteSimplePage />} />  {/*EntryPage */}
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/create/note" element={<CreateNotePage />} /> {/*CreateEntryPage */}
+          <Route path="/create/notes" element={<CreateNotePage />} /> {/*CreateEntryPage */}
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<NotFoundPage />} />
          
