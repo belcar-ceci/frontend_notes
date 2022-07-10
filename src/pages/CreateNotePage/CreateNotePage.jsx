@@ -3,8 +3,7 @@ import CreateNoteForm from "../../components/CreateNoteForm";
 
 const CreateNotePage = () => {
   return (
-    <section>CreateNotePage
-
+    <section>
       <CreateNoteForm />
     </section>
   )

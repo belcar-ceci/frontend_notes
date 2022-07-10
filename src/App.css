@@ -71,21 +71,38 @@ a {
   color: #fff;
   text-decoration: none;
 }
-
+main{
+  display: flex;
+  min-height: 80vh;
+  background: #201E48;
+  align-items: center;
+  justify-content: center;
+}
 a:hover {
   color: hotpink;
   text-decoration: none;
 }
-
+ul{
+  list-style:none
+}
 .button_component{
-  border: 1px solid #d25f07;
-  border-radius: 20px;
-  padding: 0.25rem 0.75rem;
-  color: white;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
   font-weight: bold;
-  background-color: #d25f07;
-  transition: background-color 0.5s;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #d90429;
+  background: #d90429;
 }
 .button_component:hover {
-  background-color: rgb(130, 63, 5);
+  background: #e8d310;
+  border: 2px solid #e8d310;
+  color: rgb(13, 13, 13);
+  
 }

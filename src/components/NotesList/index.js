@@ -1,6 +1,6 @@
 import "./style.css";
 import List from "../List";
-import NoteInfo from "../NoteInfo/index";
+import NoteInfo from "../NoteInfo";
 import { Link } from "react-router-dom";
 
 const NotesList = ({ notes }) => {
@@ -11,7 +11,7 @@ const NotesList = ({ notes }) => {
       render={(notes) => (
         <li key={notes.id}>
           <Link to={`/notes/${notes.id}`}>
-            <NoteInfo note={notes} />
+            <NoteInfo notes={notes} />
           </Link>
         </li>
       )}

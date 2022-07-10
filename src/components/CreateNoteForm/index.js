@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useUserTokenContext } from "../../contexts/UserTokenContext";
 import { toast } from "react-toastify";
 import { useNavigate, Navigate } from "react-router-dom";
-//import { CloudUploadOutlined } from "@ant-design/icons";
 import ErrorMessage from "../ErrorMessage";
 import Button from "../Button";
 
@@ -12,18 +11,12 @@ const CreateNoteForm = () => {
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
   const [error, setError] = useState("");
-  //const filesRef = useRef();
   const { token } = useUserTokenContext();
   const navigate = useNavigate();
 
   const createNote = async (e) => {
     try {
       e.preventDefault();
-
-      // eslint-disable-next-line no-lone-blocks
-      {/*if (!filesRef.current.files.length) {
-        throw new Error("You must upload at least one image");
-      }*/}
 
       const postNoteRes = await fetch("http://localhost:8080/notes", {
         method: "POST",
@@ -44,31 +37,7 @@ const CreateNoteForm = () => {
         data: { id },
       } = postNoteBody;
 
-      // eslint-disable-next-line no-lone-blocks
-      {/*const formData = new FormData();
-
-      for (const image of filesRef.current.files) {
-        formData.append("images", image);
-      }
-
-      const postImagesRes = await fetch(
-        `http://localhost:8080/entries/${id}/images`,
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-          body: formData,
-        }
-      );
-
-      if (!postImagesRes.ok) {
-        const postImagesBody = await postImagesRes.json();
-
-        throw new Error(postImagesBody.message);
-      }*/}
-
-      toast.success("Entry created succesfully");
+      toast.success("Note created succesfully");
       navigate(`/notes/${id}`);
     } catch (error) {
       setError(error.message);
@@ -81,9 +50,10 @@ const CreateNoteForm = () => {
 
   return (
     <>
-      <form onSubmit={createNote}>
-        <label htmlFor="title">Title:</label>
+      <form className="create_note" onSubmit={createNote}>
+        <label className="note-label" htmlFor="title">Title:</label>
         <input
+          className="controls"
           id="title"
           value={title}
           onChange={(e) => {
@@ -91,8 +61,9 @@ const CreateNoteForm = () => {
           }}
         />
 
-        <label htmlFor="description">Description:</label>
+        <label className="note-label" htmlFor="description">Description:</label>
         <input
+          className="controls"
           id="description"
           value={description}
           onChange={(e) => {
@@ -100,8 +71,9 @@ const CreateNoteForm = () => {
           }}
         />
 
-        <label htmlFor="category">Category:</label>
+        <label className="note-label" htmlFor="category">Category:</label>
         <input
+          className="controls"
           id="category"
           value={category}
           onChange={(e) => {
@@ -109,12 +81,7 @@ const CreateNoteForm = () => {
           }}
         />
 
-        {/*<label htmlFor="images">
-          <CloudUploadOutlined />
-        </label>
-        <input type="file" id="images" ref={filesRef} multiple />*/}
-
-        <Button className="button_component">Send entry</Button>
+        <Button className="button_component btnCreateNote">Create Note</Button>
       </form>
 
       {error && <ErrorMessage error={error} />}

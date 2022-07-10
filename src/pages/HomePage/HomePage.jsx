@@ -1,8 +1,11 @@
+
 import React from 'react'
 import "./style.css"; 
 
+
 const HomePage = () => {
   return (
+
     <div>
       <div className="text-container">
         <h2 data-text="Create..">Create...</h2>
@@ -11,6 +14,7 @@ const HomePage = () => {
       </div>
       
     </div>
+  
   )
 }
 

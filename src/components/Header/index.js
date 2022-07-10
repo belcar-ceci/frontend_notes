@@ -13,7 +13,7 @@ const { token, setToken } = useUserTokenContext();
   return (
     <header className="header">
 
-      <Link to="/">
+      <Link to="/register">
         <section className="header-title">
         <img
             src={Logo}
@@ -23,48 +23,53 @@ const { token, setToken } = useUserTokenContext();
         </section>
       </Link>
       <nav>
+        
         {token && (
-          <Link to="/create/notes" className="red_button">
+          <button className="btn-hover create" >
+          <Link to="/create/notes" >
             Create entry
           </Link>
-        )};
+          </button>
+        )}
     </nav>
       <nav>
         <ul>
           {token && (
             <div className="header-context-user">
-              <button className="header-login_user">
+              
                 <Link to="/login">Login</Link>
-              </button>
+              
               <button className="header-register_user">
                 <Link to="/register">Register</Link>
               </button>
             </div>
-          )};
+          )}
+        </ul>
+        <section className="close_profile">
           {token && (
-            <li>
+            
               <Button
                 className="header_close"
                 onClick={() => {
                   setToken("");
                 }}
               >
-                Log out
+                <Link to="/">
+              Logo ut
+              </Link>
               </Button>
-            </li>
+          
           )}
+          
           {token && (
-            <button>
+            <button className="profile_btn">
               <Link to="/profile">
-
+              Profile
               </Link>
             </button>
           )}
-        </ul>
+        </section>
       </nav>
-
-
-
 
     </header>
   )

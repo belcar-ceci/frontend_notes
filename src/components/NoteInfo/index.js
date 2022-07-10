@@ -2,12 +2,11 @@ import Button from "../Button";
 //import { useState } from "react";
 import { useUserTokenContext } from "../../contexts/UserTokenContext";
 import { toast } from "react-toastify";
-//import useCheckLike from "../../hooks/useCheckLike";
 
-const NoteInfo = ({ entry }) => {
-  const { id, title, name, description, category } = entry;
+
+const NoteInfo = ({ notes }) => {
+  const { id, title, description, category } = notes;
   const { token } = useUserTokenContext();
-  //const { didUserLikeEntry, setDidUserLikeEntry } = useCheckLike(id);
 
   const getNote = async (e) => {
     try {
@@ -25,17 +24,10 @@ const NoteInfo = ({ entry }) => {
 
       if (!res.ok) {
         const body = await res.json();
+        console.log(body)
         throw new Error(body.message);
       }
 
-     // eslint-disable-next-line no-lone-blocks
-     {/*setDidUserLikeEntry(!didUserLikeEntry);
-
-      if (didUserLikeEntry) {
-        setVotes(votes - 1);
-      } else {
-        setVotes(votes + 1);
-      */}
 
     } catch (error) {
       toast.error(error.message);
@@ -43,10 +35,10 @@ const NoteInfo = ({ entry }) => {
   };
 
   return (
-    <section className="entry_info">
+    <section className="note_info">
       <header>
         <h2>{title}</h2>
-        <h3>{name}</h3>
+       
       </header>
 
       <p>{description}</p>

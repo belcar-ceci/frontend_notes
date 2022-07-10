@@ -1,3 +1,4 @@
+import "./style.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -45,9 +46,11 @@ const LoginForm = () => {
 
   return (
     <>
-      <form onSubmit={loginUser}>
+      <form className="register_form" onSubmit={loginUser}>
+        <h4>Login</h4>
         <label htmlFor="email">Email:</label>
         <input
+          className="controls"
           id="email"
           type="email"
           value={email}
@@ -58,6 +61,7 @@ const LoginForm = () => {
 
         <label htmlFor="password">Password:</label>
         <input
+          className="controls"
           id="password"
           type="password"
           value={password}
@@ -66,7 +70,7 @@ const LoginForm = () => {
           }}
         />
 
-        <Button className="button_component">Login</Button>
+        <Button className="button_component btnLogin">Login</Button>
       </form>
 
       {error && <ErrorMessage error={error} />}
