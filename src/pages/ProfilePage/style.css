@@ -1,0 +1,10 @@
+.profile_user{
+    color: #f0e8f0;
+    width: 50%;
+    height: 40px;
+    display: flex;
+    font-size: 16px;
+}
+.title_profile-user{
+    font-size: 16px;
+}

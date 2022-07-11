@@ -6,7 +6,7 @@
 	justify-content: center;
 }
 
-h2 {
+.home-l {
 	color: #100f10;
 	font-size: 5vw;
 	position: relative;
@@ -14,7 +14,7 @@ h2 {
 	-webkit-text-stroke: 0.3vw #f7f7fe;
 }
 
-h2::before {
+.home-l::before {
 	top: 0;
 	left: 0;
 	width: 0;

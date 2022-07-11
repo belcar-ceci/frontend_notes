@@ -13,6 +13,7 @@ const NotesList = ({ notes }) => {
           <Link to={`/notes/${notes.id}`}>
             <NoteInfo notes={notes} />
           </Link>
+          
         </li>
       )}
     />
