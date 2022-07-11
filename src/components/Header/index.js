@@ -34,7 +34,7 @@ const { token, setToken } = useUserTokenContext();
     </nav>
       <nav>
         <ul>
-          {token && (
+          {!token && (
             <div className="header-context-user">
               
                 <Link to="/login">Login</Link>

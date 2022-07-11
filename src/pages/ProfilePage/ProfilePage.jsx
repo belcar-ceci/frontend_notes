@@ -2,10 +2,11 @@ import "./style.css";
 import { useUserTokenContext } from "../../contexts/UserTokenContext";
 import { Navigate } from "react-router-dom";
 //import Avatar from "../../components/Avatar";
-import NotesList from "../../components/NotesList";
+import NotesInfo from "../../components/NotesList";
 import Spinner from "../../components/Spinner";
 import ErrorMessage from "../../components/ErrorMessage";
 import useUser from "../../hooks/useUser";
+
 
 const ProfilePage = () => {
   const { token } = useUserTokenContext();
@@ -42,7 +43,7 @@ const ProfilePage = () => {
             <h2>My sticky notes</h2>
 
             {user?.notes.length ? (
-              <NotesList notes={user?.notes} />
+              <NotesInfo notes={user?.notes} />
             ) : (
               <p>No notes sticky</p>
             )}

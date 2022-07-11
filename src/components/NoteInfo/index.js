@@ -1,38 +1,38 @@
-import Button from "../Button";
+//import Button from "../Button";
 //import { useState } from "react";
-import { useUserTokenContext } from "../../contexts/UserTokenContext";
-import { toast } from "react-toastify";
+//import { useUserTokenContext } from "../../contexts/UserTokenContext";
+//import { toast } from "react-toastify";
 
 
 const NoteInfo = ({ notes }) => {
-  const { id, title, description, category } = notes;
-  const { token } = useUserTokenContext();
+  const { title, description, category } = notes;
+  //const { token } = useUserTokenContext();
 
-  const getNote = async (e) => {
-    try {
-      e.preventDefault();
+  // const getNote = async (e) => {
+  //   try {
+  //     e.preventDefault();
 
-      const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/notes/${id}`,
-        {
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+  //     const res = await fetch(
+  //       `${process.env.REACT_APP_API_URL}/notes/${id}`,
+  //       {
+  //         method: "GET",
+  //         headers: {
+  //           Authorization: `Bearer ${token}`,
+  //         },
+  //       }
+  //     );
 
-      if (!res.ok) {
-        const body = await res.json();
-        console.log(body)
-        throw new Error(body.message);
-      }
+  //     if (!res.ok) {
+  //       const body = await res.json();
+  //       console.log(body)
+  //       throw new Error(body.message);
+  //     }
 
 
-    } catch (error) {
-      toast.error(error.message);
-    }
-  };
+  //   } catch (error) {
+  //     toast.error(error.message);
+  //   }
+  // };
 
   return (
     <section className="note_info">
@@ -44,9 +44,9 @@ const NoteInfo = ({ notes }) => {
       <p>{description}</p>
       <span>{category }</span>
 
-      {token && (
+      {/* {token && (
         <Button onClick={getNote}></Button>
-      )}
+      )} */}
       
     </section>
   );
