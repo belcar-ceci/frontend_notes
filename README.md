@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+<p align="center"><img src="./public/Imgs/Readme.MD/Sticky_notes.PNG?raw=true" width="200"></a></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sticky-Notes Frontend 📝
+============
+## Introduction 📚
+Sticky Notes es un proyecto elaborado en equipo para la tercra fase del Bootcamp en Hack a Boss. Es una página web focalizada en Frontend y desarrollada con React, vinculada con la api-notes Backend.
 
-## Available Scripts
+## Starting 🌎
+Estas instrucciones le permitirán obtener una copia de trabajo del proyecto en su computadora local, con fines de desarrollo y prueba
 
-In the project directory, you can run:
+Abre terminal e inicia
+### `Frontend 🎉`
+En el directorio del proyecto, puede ejecutar:
+  - Clone git https://github.com/belcar-ceci/frontend_notes para descargar el proyecto, haz un fork.
+    ### `npm start`
 
-### `npm start`
+  - Ejecuta la aplicación en el modo de desarrollo.\
+  - Abra [http://localhost:3000](http://localhost:3000) para verlo en su navegador.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Install ✅
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- npm install
+- react-router-dom
+- sweetalert
+- uuid
+- swiper
 
-### `npm test`
+## Desktop Version 💻
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <img src="./public/Imgs/Readme.MD/Destopk_notes.gif?raw=true" width=80% />
+</p>
 
-### `npm run build`
+## Tools 🧰 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* ReactJS
+* Javascript
+* Html5
+* Css3
+* react-router-dom
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Autores 🚀 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Cecilia Carbajal.
+* Calixto Lópex.
+## Gratitud 🎁
+* Comparte este proyecto 📢 .
+* Made with ❤️ by [Cecilia Carbajal](https://github.com/belcar-ceci/belcar_ceci_portfolio.git) y [Calixto López ](https://github.com/CalixtoLopez)
