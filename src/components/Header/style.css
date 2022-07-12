@@ -1,0 +1,103 @@
+.header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 1rem;
+  background-color: #201E48;
+  color: rgb(227, 217, 217);
+}
+.header-context-user{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.header-login_user{
+    min-width: 130px;
+    height: 40px;
+    color: rgb(131, 126, 126);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #e8d310;
+    background: #e8d310;
+}
+
+.header-login_user:hover{
+  background: #857e41;
+  color: #e8d310
+}
+
+.header-register_user{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #d90429;
+    background: #d90429;
+}
+
+.header-register_user:hover{
+  background: rgb(213, 108, 108);
+  color: #d90429
+}
+@media screen and (max-width: 375px) {
+  .header {
+    font-size: 0.8rem;
+  }
+  .header .header-context-user p {
+    display: none;
+  }
+}
+
+/*create note*/
+.btn-hovers{
+  margin: 10%;
+  text-align: center;
+  width: 86%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 25px;
+  height: 40px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn-hovers:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hovers:focus {
+    outline: none;
+}
+
+.btn-hovers.creates {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}

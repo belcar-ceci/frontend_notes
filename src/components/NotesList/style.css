@@ -1,0 +1,19 @@
+.entries_list .entry_info {
+  background-color: white;
+  color: black;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(70, 70, 70, 0.3);
+  padding: 1rem;
+  transition: box-shadow 0.5s;
+}
+
+.entries_list .entry_info:hover {
+  box-shadow: 1px 1px 3px rgba(74, 2, 2, 0.4);
+}
+
+.entries_list .entry_info button {
+  display: inline;
+  border: none;
+  background-color: white;
+  margin-right: 0.25rem;
+}
