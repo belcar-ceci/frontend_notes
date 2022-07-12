@@ -13,7 +13,7 @@ const { token, setToken } = useUserTokenContext();
   return (
     <header className="header">
 
-      <Link to="/register">
+      <Link to="/">
         <section className="header-title">
         <img
             src={Logo}
@@ -25,12 +25,12 @@ const { token, setToken } = useUserTokenContext();
       <nav>
         
         {token && (
-          <button className="btn-hover create" >
+          <button className="btn-hovers creates" >
           <Link to="/create/notes" >
-            Create entry
+            ➕ Sticky
           </Link>
           </button>
-        )}
+        )} 
     </nav>
       <nav>
         <ul>

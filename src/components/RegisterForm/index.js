@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Button from "../Button";
 import ErrorMessage from "../ErrorMessage";
 
+
 const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -34,6 +35,7 @@ const RegisterForm = () => {
         const body = await res.json();
         console.log(body)
         throw new Error(body.message);
+        
       }
 
       setError("");
@@ -41,6 +43,7 @@ const RegisterForm = () => {
       setEmail("");
       setPassword("");
       toast.success("Registered succesfully. Check your email!");
+      
     } catch (error) {
       setError(error.message);
     }

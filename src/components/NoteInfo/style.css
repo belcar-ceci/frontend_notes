@@ -53,3 +53,9 @@
 	right: 30px;
 	letter-spacing: 1px;
 }
+
+@media  (min-width: 375px) {
+  .note-info {
+    width: 81vw;
+  }
+}
