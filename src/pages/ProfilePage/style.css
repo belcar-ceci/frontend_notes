@@ -1,10 +1,57 @@
-.profile_user{
-    color: #f0e8f0;
-    width: 50%;
-    height: 40px;
-    display: flex;
-    font-size: 16px;
+.profile_user {
+  color: #f0e8f0;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  font-size: 16px;
 }
-.title_profile-user{
-    font-size: 16px;
+.title_profile-user {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-css {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.title-css {
+  text-align: center;
+}
+
+.boder-card {
+  margin: 20px;
+  padding: 60px;
+  width: 300px;
+  display: grid;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  color: Black;
+  background: radial-gradient(#60efbc, #58d5c9);
+  text-align: center;
+}
+
+.boder-card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+.cards-space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Responsive*/
+
+@media (max-width: 900px) {
+  .cards-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
