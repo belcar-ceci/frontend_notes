@@ -1,4 +1,4 @@
-.entries_list .entry_info {
+.notes_list .entry_info {
   background-color: white;
   color: black;
   margin-bottom: 2rem;
@@ -7,7 +7,7 @@
   transition: box-shadow 0.5s;
 }
 
-.entries_list .entry_info:hover {
+.notes_list .entry_info:hover {
   box-shadow: 1px 1px 3px rgba(74, 2, 2, 0.4);
 }
 

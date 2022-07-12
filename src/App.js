@@ -24,7 +24,6 @@ function App() {
           <Route path="/create/notes" element={<CreateNotePage />} /> {/*CreateEntryPage */}
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<NotFoundPage />} />
-         
         </Routes>
       </main>
       <Footer />
