@@ -1,4 +1,4 @@
-<p align="center"><img src="./public/Imgs/Readme.MD/Sticky_notes.PNG?raw=true" width="200"></a></p>
+<p align="center"><img src="./public/Imgs/Readme.MD/Sticky_notes.png?raw=true" width="200"></a></p>
 
 Sticky-Notes Frontend 📝
 ============
