@@ -3,7 +3,7 @@
 Sticky-Notes Frontend 📝
 ============
 ## Introduction 📚
-Sticky Notes es un proyecto elaborado en equipo para la tercra fase del Bootcamp en Hack a Boss. Es una página web focalizada en Frontend y desarrollada con React, vinculada con la api-notes Backend.
+Sticky Notes es un proyecto elaborado en equipo para la tercera fase del Bootcamp en Hack a Boss. Es una página web focalizada en Frontend y desarrollada con React, vinculada con la api-notes Backend.
 
 ## Starting 🌎
 Estas instrucciones le permitirán obtener una copia de trabajo del proyecto en su computadora local, con fines de desarrollo y prueba
@@ -16,6 +16,7 @@ En el directorio del proyecto, puede ejecutar:
 
   - Ejecuta la aplicación en el modo de desarrollo.\
   - Abra [http://localhost:3000](http://localhost:3000) para verlo en su navegador.
+  - Si desea otro puerto configura .env  , por ejemplo [REACT_APP_API_URL=http://localhost:8080]
 
 ## Install ✅
 
@@ -43,7 +44,7 @@ En el directorio del proyecto, puede ejecutar:
 ## Autores 🚀 
 
 * Cecilia Carbajal.
-* Calixto Lópex.
+* Calixto López.
 ## Gratitud 🎁
 * Comparte este proyecto 📢 .
 * Made with ❤️ by [Cecilia Carbajal](https://github.com/belcar-ceci/belcar_ceci_portfolio.git) y [Calixto López ](https://github.com/CalixtoLopez)
