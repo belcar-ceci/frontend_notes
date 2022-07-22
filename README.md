@@ -16,7 +16,8 @@ En el directorio del proyecto, puede ejecutar:
 
   - Ejecuta la aplicación en el modo de desarrollo.\
   - Abra [http://localhost:3000](http://localhost:3000) para verlo en su navegador.
-  - Si desea otro puerto configura .env  , por ejemplo [REACT_APP_API_URL=http://localhost:8080]
+  - Si desea otro puerto configura .env  , por ejemplo 
+  http://localhost:8080
 
 ## Install ✅
 
