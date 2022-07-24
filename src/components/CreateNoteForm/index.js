@@ -72,14 +72,25 @@ const CreateNoteForm = () => {
         />
 
         <label className="note-label" htmlFor="category">Category:</label>
-        <input
+        <select
+        className="controls"
+        onChange={(e) => {
+            setCategory(e.target.value);
+          }}
+      >
+        <option value={""}>Select a Category</option>
+        <option value={"Deportes"}>Deportes</option>
+        <option value={"Cocina"}>Cocina</option>
+        <option value={"Moda"}>Moda</option>
+      </select>
+        {/* <input
           className="controls"
           id="category"
           value={category}
           onChange={(e) => {
             setCategory(e.target.value);
           }}
-        />
+        /> */}
 
         <Button className="button_component btnCreateNote">Create Note</Button>
       </form>
