@@ -84,6 +84,8 @@
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  position: relative;
+  right: 16vw;
 }
 .btn-hovers:hover {
     background-position: 100% 0;

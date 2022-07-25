@@ -1,5 +1,6 @@
 import "./style.css";
-import NotesInfo from "../../components/NotesList";
+import NotesList from "../../components/NotesList";
+//import NoteInfo from "../../components/NoteInfo";
 import useFetch from '../../hooks/useFetch'
 import {getAllNotesEndpoint} from '../../api'
 import { useParams } from "react-router-dom";
@@ -15,7 +16,9 @@ const ProfilePage = () => {
   return (
     <section className="profile_user">
       <h2 className="title-profile-user">My sticky notes</h2>
-          {data && <NotesInfo notes={data} />}
+      {data && <NotesList notes={data} />}
+      
+      
     </section>
   );
 }
