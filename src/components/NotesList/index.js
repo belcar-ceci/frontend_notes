@@ -9,11 +9,11 @@ const NotesList = ({ notes }) => {
       className="notes_list"
       data={notes}
       render={(notes) => (
-        <li key={notes.id}>
-          <Link to={`/notes/${notes.id}`}>
+        <li className="prueba" key={notes.id}>
+          <Link className="p2 p2-logo"to={`/notes/${notes.id}`}>
             <NoteInfo notes={notes} />
           </Link>
-          
+          {notes.data}
         </li>
       )}
     />
